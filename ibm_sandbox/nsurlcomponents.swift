@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Creates an URLComponent and prints host name.
    Demostrates using Foundation components.
 */

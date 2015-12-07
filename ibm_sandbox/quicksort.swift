@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* A generic quicksort function. Shows how to use generics,
    recursion, and functional extensions in Swift.
 */

@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Prints out the size of /bin/bash. Shows how
    Glibc functions can be used in Swift.
 */

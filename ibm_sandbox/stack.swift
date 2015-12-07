@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Generic stack implementation. Shows generics
    and mutating functions in Swift.
 */

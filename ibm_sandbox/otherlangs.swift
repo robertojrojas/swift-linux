@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Writes a "Hello world" program in C++ and Python
    compiling and running both. This shows one of the ways
    Swift can interact with other languages.

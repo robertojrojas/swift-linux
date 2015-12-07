@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Writes and executes a script in Swift that echos
    the arguments passed in. Shows how to execute scripts
    in Swift and how to read arguments.

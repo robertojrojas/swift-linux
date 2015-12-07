@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Creates a server that is bound to a socket to listen for incoming
    connections. Also creates a client which sends a "Hello world"
    message to server. Shows how servers can be made in Swift.

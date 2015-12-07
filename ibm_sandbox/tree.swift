@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Generic sorted tree implementation. Shows generic
    classes and recursive functions in Swift.
 */

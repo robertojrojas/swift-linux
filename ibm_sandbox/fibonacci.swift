@@ -1,3 +1,5 @@
+#!/usr/bin/env swift
+
 /* Basic fibonacci function in swift.
    Demostrates func calls and recursion.
 */
