@@ -1,0 +1,4 @@
+module Crypt {
+    header "/usr/include/crypt.h"
+    export *
+}
