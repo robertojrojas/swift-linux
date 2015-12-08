@@ -12,7 +12,6 @@ if error != SQLITE_OK {
 
 var sql:String = "SELECT datetime('now') || ' -- formatted: ' || strftime('%Y-%m-%d %H:%M:%S')"
 
-//var cSql = sql.cStringUsingEncoding(NSUTF8StringEncoding)
 var stmt:COpaquePointer = nil
 
 var result = sqlite3_prepare_v2(connection, sql, -1, &stmt, nil)
@@ -28,7 +27,6 @@ while (sqlite3_step(stmt) == SQLITE_ROW) {
     let buf = UnsafePointer<Int8>(sqlite3_column_text(stmt, 0))
     let val = String.fromCString(buf)
     print("\(val!)")
-    
 }
 
 sqlite3_finalize(stmt)
