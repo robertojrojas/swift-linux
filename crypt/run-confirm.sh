@@ -1,0 +1,1 @@
+swift -I $(pwd)/Crypt -lcrypt confirm_pass.swift
