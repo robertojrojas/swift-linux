@@ -20,7 +20,7 @@ let LISTEN_ADDR = "tcp://127.0.0.1:5555"
 
 func createSocket() -> UnsafeMutablePointer<Void> {
 
-    let context:UnsafeMutablePointer<Void>   = zmq_ctx_new()
+    let context:UnsafeMutablePointer<Void> = zmq_ctx_new()
     let socket_connection = zmq_socket (context, ZMQ_REP)
     return socket_connection
 }
