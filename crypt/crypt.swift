@@ -14,7 +14,7 @@ seed[1] = CUnsignedLong(getpid()) ^ CUnsignedLong(seed[0] >> 14 & 0x30000)
 
 
 var salt:[Character] = ["$", "1", "$"]
-var seedchars = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+let seedchars = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
 
 for i in 0..<8 {
@@ -23,8 +23,8 @@ for i in 0..<8 {
     salt.insert(currentChar, atIndex: i+3)
 }
 
-let pass = getpass("Password:")
-var password = crypt(pass, String(salt))
-let int8Ptr = unsafeBitCast(password, UnsafePointer<Int8>.self)
-let value = String.fromCString(int8Ptr)
+let pass     = getpass("Password:")
+let password = crypt(pass, String(salt))
+let int8Ptr  = unsafeBitCast(password, UnsafePointer<Int8>.self)
+let value    = String.fromCString(int8Ptr)
 print(value!)
