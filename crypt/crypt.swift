@@ -23,14 +23,8 @@ for i in 0..<8 {
     salt.insert(currentChar, atIndex: i+3)
 }
 
-/* TODO: figure out how to do this with Swift 2.x */
-var saltStr:String = ""
-for currentChar in salt {
-    saltStr.append(currentChar)
-}
-
 let pass = getpass("Password:")
-var password = crypt(pass, saltStr)
+var password = crypt(pass, String(salt))
 let int8Ptr = unsafeBitCast(password, UnsafePointer<Int8>.self)
 let value = String.fromCString(int8Ptr)
 print(value!)
